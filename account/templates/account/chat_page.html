@@ -1,89 +1,26 @@
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head>-->
-<!--	<title>Messenger</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--	<h1>Welcome to Messenger</h1>-->
-<!--	<div>-->
-<!--		<ul id="message-list">-->
-<!--			<li class="message">John: Hi there!</li>-->
-<!--			<li class="message">Jane: Hey! How are you?</li>-->
-<!--		</ul>-->
-<!--	</div>-->
-<!--	<div>-->
-<!--		<input type="text" id="message-input" placeholder="Type your message here...">-->
-<!--		<button id="send-button">Send</button>-->
-<!--	</div>-->
-<!--</body>-->
-<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> chat </title>
+</head>
+</html>
 
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head>-->
-<!--	<title>Messenger</title>-->
-<!--	<link rel="stylesheet" href="style.css">-->
-<!--</head>-->
-<!--<body>-->
-<!--	<div class="container">-->
-<!--		<div class="chatbox">-->
-<!--			<div class="header">-->
-<!--				<h2>Messenger</h2>-->
-<!--				<input type="text" id="search-input" placeholder="Search...">-->
-<!--			</div>-->
-<!--			<div class="contact-list">-->
-<!--				<ul id="contact-list">-->
-<!--					<li class="contact">John Smith</li>-->
-<!--					<li class="contact">Jane Doe</li>-->
-<!--					<li class="contact">Bob Johnson</li>-->
-<!--				</ul>-->
-<!--			</div>-->
-<!--			<div class="message-list">-->
-<!--				<ul id="message-list">-->
-<!--					<li class="message">John: Hi there!</li>-->
-<!--					<li class="message">Jane: Hey! How are you?</li>-->
-<!--				</ul>-->
-<!--			</div>-->
-<!--			<form id="message-form">-->
-<!--				<input type="text" id="message-input" placeholder="Type your message here...">-->
-<!--				<button type="submit" id="send-button">Send</button>-->
-<!--			</form>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--	<script src="app.js"></script>-->
-<!--</body>-->
-<!--</html>-->
-<div class='container' ng-cloak ng-app="chatApp">
-  <h1>Swanky Chatbox UI With Angular</h1>
-  <div class='chatbox' ng-controller="MessageCtrl as chatMessage">
-    <div class='chatbox__user-list'>
-      <h1>User list</h1>
-      <div class='chatbox__user--active'>
-        <p>Jack Thomson</p>
-      </div>
-      <div class='chatbox__user--busy'>
-        <p>Angelina Jolie</p>
-      </div>
-      <div class='chatbox__user--active'>
-        <p>George Clooney</p>
-      </div>
-      <div class='chatbox__user--active'>
-        <p>Seth Rogen</p>
-      </div>
-      <div class='chatbox__user--away'>
-        <p>John Lydon</p>
-      </div>
-    </div>
-    <div class="chatbox__messages" ng-repeat="message in messages">
-      <div class="chatbox__messages__user-message">
-        <div class="chatbox__messages__user-message--ind-message">
-          <p class="name">{{message.Name}}</p>
-          <br/>
-          <p class="message">{{message.Message}}</p>
+<body>
+    <div style="background-color: rgb(218, 213, 213); display: flex; margin: 5rem; height: 30rem; border-radius: 15px;" >
+        <div style="border-right: 2px solid gray; width: 25%;">
+            <input placeholder="search contact..." style="background-color: rgb(156, 156, 156); height: 30px;
+            margin-top:15px; width:200px; padding: 10px; margin-left: 35px; border-radius: 10px; border: none;"></input>
         </div>
-      </div>
+        <div style=" width: 75%; display: grid;">
+            <input placeholder="search message..." style="background-color: rgb(156, 156, 156); height: 30px;
+            margin-top:15px; width:400px; padding: 10px; margin-left: 100px; border-radius: 10px; border: none;"></input>
+            <div>
+            <input placeholder="write your messge here..."
+             style="height: 40px; width:80%; margin-left: 25px; margin-top: 300px; padding: 10px; border-radius: 10px; border: none;"></input>
+            <button class="btn btn-primary">send</button>
+            </div>
+        </div>
     </div>
-    <form>
-      <input type="text" placeholder="Enter your message">
-    </form>
-  </div>
+
+</body>
